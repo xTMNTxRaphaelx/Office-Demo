@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&subid=20&classid=L&chapcount=6 -->
+<html lang="en" class=" desktop landscape">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Home</title>
+
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./Ch6-MolecularBasisOfInheritance_files/grid.css">
+  <link rel="stylesheet" href="./Ch6-MolecularBasisOfInheritance_files/mailform.css">
+  <link rel="stylesheet" href="./Ch6-MolecularBasisOfInheritance_files/search.css">
+  <link rel="stylesheet" href="./Ch6-MolecularBasisOfInheritance_files/style-new.css">
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.js"></script>
+
+  <link href="./Ch6-MolecularBasisOfInheritance_files/css" rel="stylesheet">
+
+
+  <!--[if lt IE 9]> 
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="./Ch6-MolecularBasisOfInheritance_files/device.min.js"></script>
+  <script type="text/javascript">
+    function fullscreencontent() {
+      $("#pagewrap").toggleClass('fullscreen');
+      $(".item").fadeIn();
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      // Show sidebar
+      function showSidebar() {
+        $('#main').addClass('use-sidebar');
+        //$.cookie('sidebar-pref', 'use-sidebar', { expires: 30 });
+      }
+      $('#button-show').click(function () {
+        showSidebar();
+      });
+
+      // Hide sidebar
+      function hideSidebar() {
+        $('#main').removeClass('use-sidebar');
+        //$.cookie('sidebar-pref', null, { expires: 30 });
+      }
+      $('#button-hide').click(function () {
+        hideSidebar();
+      });
+
+      // Toggle sidebar
+      $('#button-toggle').click(function () {
+        if ($('#main').hasClass('use-sidebar')) {
+          hideSidebar();
+        }
+        else {
+          showSidebar();
+        }
+      });
+
+      // Reset preference
+      $('#button-reset').click(function () {
+        //$.cookie('sidebar-pref', null);
+      });
+
+      // Auto-load preference
+      //$('#main').addClass($.cookie('sidebar-pref'));
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).keypress(
+      function (event) {
+        if (event.which == '13') {
+          event.preventDefault();
+        }
+      });
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
+  </script>
+
+  <script type="text/javascript">
+    function stopEnterKey(evt) {
+      var evt = (evt) ? evt : ((event) ? event : null);
+      var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+      if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+    }
+    document.onkeypress = stopEnterKey;
+
+    function preventEnterKey(e) {
+      // W3C (Chrome|FF) || IE
+      e = e || window.event;
+      var keycode = e.which || e.keyCode;
+      if (keycode == 13) { // Key code of enter button
+        // Cancel default action
+        if (e.preventDefault) { // W3C
+          e.preventDefault();
+        } else { // IE
+          e.returnValue = false;
+        }
+        // Cancel visible action
+        if (e.stopPropagation) { // W3C
+          e.stopPropagation();
+        } else { // IE
+          e.cancelBubble = true;
+        }
+        // We don't need anything else
+        return false;
+      }
+    }
+  </script>
+  <style>
+    .caption-desc b {
+      color: #fff;
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div id="stuck_container" class="stuck_container">
+        <div class="container">
+          <div class="col-xs-6 col-sm-6"> <a href="#" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch6-MolecularBasisOfInheritance_files/cbse-logo.png"></a>
+            <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
+            <h2>Central Board of Secondary Education</h2>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <h1><img src="./Ch6-MolecularBasisOfInheritance_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+          </div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch6-MolecularBasisOfInheritance_files/digitalindia.png"></div>
+        </div>
+      </div>
+      <div id="stuck_container" class="stuck_container isStuck" style="top: -109px; visibility: hidden; position: fixed; width: 100%;">
+        <div class="container">
+          <div class="col-xs-6 col-sm-6"> <a href="#" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch6-MolecularBasisOfInheritance_files/cbse-logo.png"></a>
+            <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
+            <h2>Central Board of Secondary Education</h2>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <h1><img src="./Ch6-MolecularBasisOfInheritance_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+          </div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch6-MolecularBasisOfInheritance_files/digitalindia.png"></div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container" style="text-align:right;">
+        <ul class="sf-menu sf-js-enabled sf-arrows" data-type="navbar">
+          <li class="active"> <a href="#">Home</a> </li>
+          <li> <a href="##courses" class="sf-with-ul">Contents</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="#">Class 9<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="#">Class 10<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXI.html">Class 11<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXII.html">Class 12<sup>th</sup></a> </li>
+            </ul>
+          </li>
+          <li> <a href="##addresource" class="sf-with-ul">Other Links</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
+              <li style="opacity: 0;"> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
+              <li style="opacity: 0;"> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
+              <li style="opacity: 0;"> <a href="http://nroer.gov.in/welcome" target="_blank">NROER</a> </li>
+              <li style="opacity: 0;"> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
+            </ul>
+          </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#"
+              class="sf-with-ul">Partners</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#">Khan Academy</a>                </li>
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#">Exam Fear</a>                </li>
+            </ul>
+          </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+
+      <section class="well9 bg-primary">
+        <div class="row">
+          <div class="col-md-2 col-sm-10" id="sidebar">
+            <div id="search">
+              <form>
+                <input name="q" type="text">
+                <input type="submit" value="Search" name="Submit">
+              </form>
+            </div>
+            <ul>
+              <!--<li > <a href="index.php?classid=A">Primary</a>
+    <ul>
+      <li><a href="index.php?classid=A">Class I</a></li>
+      <li><a href="index.php?classid=B">Class II</a></li>
+      <li><a href="index.php?classid=C">Class III</a></li>
+      <li><a href="index.php?classid=D">Class IV</a></li>
+      <li><a href="index.php?classid=E">Class V</a></li>
+    </ul>
+  </li>
+  <li > <a href="index.php?classid=F">Middle</a>
+    <ul>
+      <li><a href="index.php?classid=F">Class VI</a></li>
+      <li><a href="index.php?classid=G">Class VII</a></li>
+      <li><a href="index.php?classid=H">Class VIII</a></li>
+    </ul>
+  </li> -->
+              <li> <a href="#">Secondary</a>
+                <ul>
+                  <li><a href="#">Class IX</a></li>
+                  <li><a href="#">Class X</a></li>
+                </ul>
+              </li>
+              <li class="active"> <a href="/HomeXI.html">Senior Secondary</a>
+                <ul>
+                  <li><a href="/HomeXI.html">Class XI</a></li>
+                  <li><a href="/HomeXII.html">Class XII</a></li>
+                </ul>
+              </li>
+              <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-md-10 col-sm-10" id="pagewrap">
+
+
+            <h3 class="breadcrumb"><a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#"
+                onclick="javascript:window.history.go(-1); return false;" class="historyback">← Back</a><a style="float:right;"
+                class="togglescreen" href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#"
+                onclick="fullscreencontent();"></a><a href="##courses">Senior Secondary</a> » <a href="/HomeXII.html">Class XII</a>              » <a href="http://49.50.72.128/testmoocs3/learn/chapter.php?subid=20&amp;classname=Class%20XII&amp;classid=L">Biology</a></h3>
+            <h3>Chapter 6 - <span>Molecular Basis of Inheritance</span></h3>
+            <div id="chapterslist">
+              <div class="tabrow"><span class="col1a bold">Topic Name</span><span class="col2a bold textright">Videos</span><span class="col3a textright bold last">Text</span>
+                <span class="col4a textright bold last">Exercise</span>
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.1 The DNA</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1312&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1312&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1312&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.2 The Search for Genetic Material</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1313&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1313&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1313&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.3 RNA World</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1314&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1314&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1314&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.4 Replication</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1315&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1315&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1315&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.5 Transcription</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1316&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1316&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1316&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.6 Genetic Code</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1317&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1317&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1317&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.7 Translation</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1318&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1318&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1318&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.8 Regulation of Gene Expression</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1319&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1319&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1319&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.9 Human Genome Project</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1320&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1320&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1320&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+              <div class="tabrow">
+                <span class="col1a">6.10 DNA Fingerprinting</span>
+                <span class="col2a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1321&amp;classname=Class%20XII&amp;show=videos&amp;classid=L" class="item bgclass6 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_video.png"><b>0</b> Videos</a></span>
+                <span class="col3a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1321&amp;classname=Class%20XII&amp;show=text&amp;classid=L" class="item bgclass3 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_text.png"><b>1</b> Text</a></span>
+                <span class="col4a textright"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=233&amp;subid=20&amp;topicid=1321&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L" class="item bgclass7 animated zoomIn"><img src="./Ch6-MolecularBasisOfInheritance_files/icon_assessment.png"><b>1</b> Exercise</a></span>
+
+
+              </div>
+            </div>
+            <div style="color: rgba(0,0,0,0.87);padding-top: 18px;background: #fff;padding: 12px;font-weight: bold;">
+              <p style="font-size: 15px; margin: 12px 0">If you have read all the Topic, <a href="Main/Ch6.html" style="background-color: #2b94d6;padding: 6px 15px;margin-left: 6px;border-radius: 2px;font-weight: bold;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);color: #fff;">Attempt Test</a></p>
+
+              <p style="color: red; font-size: 12px">*Kindly give the test only when you are done with all the topics, as you wont be able to reattempt it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer id="footer">
+      <hr style="margin-top:0px;">
+      <div class="container well9">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <p class="copy">CBSE © <span id="copyright-year">2017</span></p>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12 cl pt">
+            <p class="text1"><strong>Disclaimer</strong>: The Video contents offered by CBSE in its Digi-शिक्षा portal are freely shared contents
+              of various agencies that are in the field of free online education. These video contents are meant to act as
+              learning aid and may not necessarily be exactly mapped with the NCERT books. The focus is on personalized learning
+              anytime, anywhere, free of cost. This platform gives link to various educational resources so as to provide
+              easy navigation for the students saving their precious time. The CBSE does not claim the ownership of the content
+              and copyright. Copyright shall be applicable as specified in the respective content uploaded here with the
+              consent of the agencies concerned.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+
+        <!-- {%FOOTER_LINK} -->
+      </div>
+    </footer>
+  </div>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/script-learn.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.cookie.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.easing.1.3.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/tmstickup.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.ui.totop.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/superfish.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.rd-navbar.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/jquery.rd-parallax.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/wow.js"></script>
+  <script src="./Ch6-MolecularBasisOfInheritance_files/TMSearch.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+  <script type="text/javascript">
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      });
+      $('#sidebar li a').click(function (e) {
+        $('#sidebar li ul').hide();
+        $(this).next('ul').slideToggle(200);
+        $('#sidebar li').removeClass('active');
+        $(this).parent().addClass('active');
+        if ($(this).parent().children('ul').length > 0) {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+
+  <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#" id="toTop"
+    class="toTop fa fa-chevron-up" style="display: none;"></a>
+  <div class="rd-mobilemenu">
+    <ul class="rd-mobilemenu_ul">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="##courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
+          <li> <a href="#">Class 9<sup>th</sup></a> </li>
+          <li> <a href="#">Class 10<sup>th</sup></a> </li>
+          <li> <a href="/HomeXI.html">Class 11<sup>th</sup></a> </li>
+          <li> <a href="/HomeXII.html">Class 12<sup>th</sup></a> </li>
+        </ul>
+      </li>
+      <li><a href="##addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
+          <li> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
+          <li> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
+          <li> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
+          <li> <a href="http://nroer.gov.in/welcome" target="_blank">NROER</a> </li>
+          <li> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
+        </ul>
+      </li>
+      <li><a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#" class="rd-with-ul">Partners<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#">Khan Academy</a>            </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#">Exam Fear</a>            </li>
+        </ul>
+      </li>
+      <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
+    </ul>
+  </div>
+  <div class="rd-mobilepanel"><button class="rd-mobilepanel_toggle"><span></span></button>
+    <h2 class="rd-mobilepanel_title">Home</h2>
+  </div>
+  <div id="window-resizer-tooltip"><a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=233&amp;subid=20&amp;classid=L&amp;chapcount=6#" title="Edit settings"></a>
+    <span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight"
+      id="winHeight"></span><br>
+    <span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight"
+      id="vpHeight"></span></div>
+</body>
+
+</html>
