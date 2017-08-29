@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <!-- saved from url=(0126)http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&subid=3&topicid=324&classname=Class%20XII&show=assessment&classid=L -->
-<html lang="en" class=" desktop landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" class=" desktop landscape">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Home</title>
-  
+
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="./Ch5_files/grid.css">
   <link rel="stylesheet" href="./Ch5_files/mailform.css">
   <link rel="stylesheet" href="./Ch5_files/search.css">
   <link rel="stylesheet" href="./Ch5_files/style-new.css">
   <script src="./Ch5_files/jquery.js"></script>
-	
-	<link href="./Ch5_files/css" rel="stylesheet">
+
+  <link href="./Ch5_files/css" rel="stylesheet">
 
 
   <!--[if lt IE 9]> 
@@ -24,210 +27,323 @@
   <script src="js/html5shiv.js"></script>
   <![endif]-->
   <script src="./Ch5_files/device.min.js"></script>
-	<script type="text/javascript">
-	function fullscreencontent(){
-		$("#pagewrap").toggleClass('fullscreen');
-		$(".item").fadeIn();
-	}
-	</script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-	
-		// Show sidebar
-		function showSidebar(){
-			$('#main').addClass('use-sidebar');
-			//$.cookie('sidebar-pref', 'use-sidebar', { expires: 30 });
-		}
-		$('#button-show').click(function(){
-			showSidebar();
-		});
-	
-		// Hide sidebar
-		function hideSidebar(){
-			$('#main').removeClass('use-sidebar');
-			//$.cookie('sidebar-pref', null, { expires: 30 });
-		}
-		$('#button-hide').click(function(){
-			hideSidebar();
-		});
-	
-		// Toggle sidebar
-		$('#button-toggle').click(function(){
-			if ( $('#main').hasClass('use-sidebar') ){
-				hideSidebar();
-			}
-			else {
-				showSidebar();
-			}
-		});
-	
-		// Reset preference
-		$('#button-reset').click(function(){
-			//$.cookie('sidebar-pref', null);
-		});
-		$('#lightbox').click(function(){
-			//$.cookie('sidebar-pref', null);
-			$('#lightboxvideo').attr('src', "");
-			$("#lightbox").hide();
-		});
-	
-		// Auto-load preference
-		//$('#main').addClass($.cookie('sidebar-pref'));
-	});
-		function openvideo(vd){
-			//alert(vd);
-			$("#lightbox").show();
-			$('#lightboxvideo').attr('src', "https://www.youtube.com/embed/"+vd+"?rel=0&amp;autoplay=1");
-		}
-	</script>
-<script type="text/javascript">
-$(document).keypress(
-    function(event){
-     if (event.which == '13') {
-        event.preventDefault();
-      }
-});
-</script>
-<script type="text/javascript">
-window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
-</script>
+  <script type="text/javascript">
+    function fullscreencontent() {
+      $("#pagewrap").toggleClass('fullscreen');
+      $(".item").fadeIn();
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
 
-<script type="text/javascript">
+      // Show sidebar
+      function showSidebar() {
+        $('#main').addClass('use-sidebar');
+        //$.cookie('sidebar-pref', 'use-sidebar', { expires: 30 });
+      }
+      $('#button-show').click(function () {
+        showSidebar();
+      });
+
+      // Hide sidebar
+      function hideSidebar() {
+        $('#main').removeClass('use-sidebar');
+        //$.cookie('sidebar-pref', null, { expires: 30 });
+      }
+      $('#button-hide').click(function () {
+        hideSidebar();
+      });
+
+      // Toggle sidebar
+      $('#button-toggle').click(function () {
+        if ($('#main').hasClass('use-sidebar')) {
+          hideSidebar();
+        }
+        else {
+          showSidebar();
+        }
+      });
+
+      // Reset preference
+      $('#button-reset').click(function () {
+        //$.cookie('sidebar-pref', null);
+      });
+      $('#lightbox').click(function () {
+        //$.cookie('sidebar-pref', null);
+        $('#lightboxvideo').attr('src', "");
+        $("#lightbox").hide();
+      });
+
+      // Auto-load preference
+      //$('#main').addClass($.cookie('sidebar-pref'));
+    });
+    function openvideo(vd) {
+      //alert(vd);
+      $("#lightbox").show();
+      $('#lightboxvideo').attr('src', "https://www.youtube.com/embed/" + vd + "?rel=0&amp;autoplay=1");
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).keypress(
+      function (event) {
+        if (event.which == '13') {
+          event.preventDefault();
+        }
+      });
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
+  </script>
+
+  <script type="text/javascript">
     function stopEnterKey(evt) {
-        var evt = (evt) ? evt : ((event) ? event : null);
-        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-        if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+      var evt = (evt) ? evt : ((event) ? event : null);
+      var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+      if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
     }
     document.onkeypress = stopEnterKey;
-	
-	function preventEnterKey(e) {
-    // W3C (Chrome|FF) || IE
-    e = e || window.event;
-    var keycode = e.which || e.keyCode;
-    if (keycode == 13) { // Key code of enter button
+
+    function preventEnterKey(e) {
+      // W3C (Chrome|FF) || IE
+      e = e || window.event;
+      var keycode = e.which || e.keyCode;
+      if (keycode == 13) { // Key code of enter button
         // Cancel default action
         if (e.preventDefault) { // W3C
-            e.preventDefault();
+          e.preventDefault();
         } else { // IE
-            e.returnValue = false;
+          e.returnValue = false;
         }
         // Cancel visible action
         if (e.stopPropagation) { // W3C
-            e.stopPropagation();
+          e.stopPropagation();
         } else { // IE
-            e.cancelBubble = true;
+          e.cancelBubble = true;
         }
         // We don't need anything else
         return false;
+      }
     }
-}
-</script>
-<style type="text/css">
-.videocat{ border:1px solid #CCCCCC; background:#eee; padding:10px; border-radius:5px;}
-.videocat.closed{ cursor:pointer;}
-.videocatwrap{ display:none;}
-.textcat{ border:1px solid #CCCCCC; background:#eee; padding:10px; border-radius:5px;}
-.textcat.closed{ cursor:pointer;}
-.textcatwrap{ display:none;}
+  </script>
+  <style type="text/css">
+    .videocat {
+      border: 1px solid #CCCCCC;
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
 
-.tab-content{ padding:10px; background:#000; min-height:500px;}
-.tab-content h1{ font-size:18px; font-weight:normal; line-height:26px; color:#fff; background:none; border-color:#333; margin-bottom:10px;}
-.tabnav{ height:40px; border-bottom:1px solid #000;}
-.tabnav li{ float:left; width:170px; margin-right:2px; background:#333;}
-.tabnav li a{ display:block; padding:4px 10px;}
-.tabnav li img{ width:30px; height:30px; margin-right:10px;}
-.tabnav li.active{ background:#000;}
-.tabnav li.active a{ padding:5px 10px; font-weight:bold;}
+    .videocat.closed {
+      cursor: pointer;
+    }
 
-.bg-primary .tab-content{ padding:10px; background:#fff; min-height:500px;}
-.bg-primary .tab-content h1{ font-size:18px; font-weight:normal; line-height:26px; color:#000; background:none; border-color:#333; margin-bottom:10px;}
-.bg-primary .tabnav{ height:40px; border-bottom:1px solid #999;}
-.bg-primary .tabnav li{ float:left; width:170px; margin-right:2px; background:#ddd;}
-.bg-primary .tabnav li.active{ background:#fff;}
-.bg-primary .tabnav li.active a{ padding:5px 10px; font-weight:bold; color:#000;}
-</style>
-<style type="text/css">
-.videowrap {
-}
-.videowrap iframe {
-	width: 100%;
-}
-#lightbox{ background:#000; position:fixed; height:100%; width:100%; z-index:1000; display:none;}
-img.videothumb{ width:100%; height:auto; display:none;}
-</style>
+    .videocatwrap {
+      display: none;
+    }
+
+    .textcat {
+      border: 1px solid #CCCCCC;
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .textcat.closed {
+      cursor: pointer;
+    }
+
+    .textcatwrap {
+      display: none;
+    }
+
+    .tab-content {
+      padding: 10px;
+      background: #000;
+      min-height: 500px;
+    }
+
+    .tab-content h1 {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 26px;
+      color: #fff;
+      background: none;
+      border-color: #333;
+      margin-bottom: 10px;
+    }
+
+    .tabnav {
+      height: 40px;
+      border-bottom: 1px solid #000;
+    }
+
+    .tabnav li {
+      float: left;
+      width: 170px;
+      margin-right: 2px;
+      background: #333;
+    }
+
+    .tabnav li a {
+      display: block;
+      padding: 4px 10px;
+    }
+
+    .tabnav li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .tabnav li.active {
+      background: #000;
+    }
+
+    .tabnav li.active a {
+      padding: 5px 10px;
+      font-weight: bold;
+    }
+
+    .bg-primary .tab-content {
+      padding: 10px;
+      background: #fff;
+      min-height: 500px;
+    }
+
+    .bg-primary .tab-content h1 {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 26px;
+      color: #000;
+      background: none;
+      border-color: #333;
+      margin-bottom: 10px;
+    }
+
+    .bg-primary .tabnav {
+      height: 40px;
+      border-bottom: 1px solid #999;
+    }
+
+    .bg-primary .tabnav li {
+      float: left;
+      width: 170px;
+      margin-right: 2px;
+      background: #ddd;
+    }
+
+    .bg-primary .tabnav li.active {
+      background: #fff;
+    }
+
+    .bg-primary .tabnav li.active a {
+      padding: 5px 10px;
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+  <style type="text/css">
+    .videowrap {}
+
+    .videowrap iframe {
+      width: 100%;
+    }
+
+    #lightbox {
+      background: #000;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      display: none;
+    }
+
+    img.videothumb {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
-<div id="lightbox"><p style="text-align:center;color:#fff;">Click outside of box to Close Video</p><iframe id="lightboxvideo" style="margin:10% 25%; border:1px solid #666;" width="560" height="359" src="./Ch5_files/saved_resource.html" frameborder="0" allowfullscreen=""></iframe></div>
-<div class="page">
-<header>
-<div id="stuck_container" class="stuck_container">
-  <div class="container">
-    <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch5_files/cbse-logo.png"></a>
-      <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
-      <h2>Central Board of Secondary Education</h2>
-    </div>
-    <div class="col-xs-4 col-sm-4">
-      <h1><img src="./Ch5_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
-    </div>
-    <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch5_files/digitalindia.png"></div>
+  <div id="lightbox">
+    <p style="text-align:center;color:#fff;">Click outside of box to Close Video</p>
+    <iframe id="lightboxvideo" style="margin:10% 25%; border:1px solid #666;" width="560" height="359" src="./Ch5_files/saved_resource.html"
+      frameborder="0" allowfullscreen=""></iframe>
   </div>
-</div>
-<div id="stuck_container" class="stuck_container isStuck" style="top: -109px; visibility: hidden; position: fixed; width: 100%;">
-  <div class="container">
-    <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch5_files/cbse-logo.png"></a>
-      <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
-      <h2>Central Board of Secondary Education</h2>
-    </div>
-    <div class="col-xs-4 col-sm-4">
-      <h1><img src="./Ch5_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
-    </div>
-    <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch5_files/digitalindia.png"></div>
-  </div>
-</div></header>
-<nav class="nav">
-  <div class="container" style="text-align:right;">
-    <ul class="sf-menu sf-js-enabled sf-arrows" data-type="navbar">
-      <li class="active"> <a href="http://49.50.72.128/testmoocs3/index.php">Home</a> </li>
-      <li> <a href="http://49.50.72.128/testmoocs3/index.php#courses" class="sf-with-ul">Contents</a>
-        <ul style="display: none;">
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class 12<sup>th</sup></a> </li>
-		</ul>
-      </li>
-      <li> <a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="sf-with-ul">Other Links</a>
-        <ul style="display: none;">
-          <li style="opacity: 0;"> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
-          <li style="opacity: 0;"> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
-          <li style="opacity: 0;"> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
-          <li style="opacity: 0;"> <a href="http://nroer.gov.in/welcome" target="_blank">NROER</a> </li>
-          <li style="opacity: 0;"> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
+  <div class="page">
+    <header>
+      <div id="stuck_container" class="stuck_container">
+        <div class="container">
+          <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch5_files/cbse-logo.png"></a>
+            <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
+            <h2>Central Board of Secondary Education</h2>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <h1><img src="./Ch5_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+          </div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch5_files/digitalindia.png"></div>
+        </div>
+      </div>
+      <div id="stuck_container" class="stuck_container isStuck" style="top: -109px; visibility: hidden; position: fixed; width: 100%;">
+        <div class="container">
+          <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./Ch5_files/cbse-logo.png"></a>
+            <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
+            <h2>Central Board of Secondary Education</h2>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <h1><img src="./Ch5_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+          </div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./Ch5_files/digitalindia.png"></div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container" style="text-align:right;">
+        <ul class="sf-menu sf-js-enabled sf-arrows" data-type="navbar">
+          <li class="active"> <a href="http://49.50.72.128/testmoocs3/index.php">Home</a> </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/index.php#courses" class="sf-with-ul">Contents</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class 12<sup>th</sup></a> </li>
+            </ul>
+          </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="sf-with-ul">Other Links</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
+              <li style="opacity: 0;"> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
+              <li style="opacity: 0;"> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
+              <li style="opacity: 0;"> <a href="http://nroer.gov.in/welcome" target="_blank">NROER</a> </li>
+              <li style="opacity: 0;"> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
+            </ul>
+          </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+              class="sf-with-ul">Partners</a>
+            <ul style="display: none;">
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Khan Academy</a>                </li>
+              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Exam Fear</a>                </li>
+            </ul>
+          </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a> </li>
         </ul>
-      </li>
-      <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" class="sf-with-ul">Partners</a>
-        <ul style="display: none;">
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Khan Academy</a> </li>
-          <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Exam Fear</a> </li>
-        </ul>
-      </li>
-      <li> <a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a> </li>
-    </ul>
-  </div>
-</nav>
-  <main>
-   
-	<section class="well9 bg-primary">
-			<div class="row">
-				<div class="col-md-2 col-sm-10" id="sidebar">
-					<div id="search">
-  <form>
-    <input name="q" type="text">
-    <input type="submit" value="Search" name="Submit">
-  </form>
-</div>
-<ul>
-  <!--<li > <a href="index.php?classid=A">Primary</a>
+      </div>
+    </nav>
+    <main>
+
+      <section class="well9 bg-primary">
+        <div class="row">
+          <div class="col-md-2 col-sm-10" id="sidebar">
+            <div id="search">
+              <form>
+                <input name="q" type="text">
+                <input type="submit" value="Search" name="Submit">
+              </form>
+            </div>
+            <ul>
+              <!--<li > <a href="index.php?classid=A">Primary</a>
     <ul>
       <li><a href="index.php?classid=A">Class I</a></li>
       <li><a href="index.php?classid=B">Class II</a></li>
@@ -243,147 +359,201 @@ img.videothumb{ width:100%; height:auto; display:none;}
       <li><a href="index.php?classid=H">Class VIII</a></li>
     </ul>
   </li> -->
-  <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Secondary</a>
-    <ul>
-      <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class IX</a></li>
-      <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class X</a></li>
-    </ul>
-  </li>
-  <li class="active"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Senior Secondary</a>
-    <ul>
-      <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class XI</a></li>
-      <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class XII</a></li>
-    </ul>
-  </li>
-  <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
-</ul>				</div>
-						<div class="col-md-10 col-sm-10" id="pagewrap">
-						
-						
-						<h3 class="breadcrumb"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" onclick="javascript:window.history.go(-1); return false;" class="historyback">← Back</a><a style="float:right;" class="togglescreen" href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" onclick="fullscreencontent();"></a><a href="http://49.50.72.128/testmoocs3/index.php#courses">Senior Secondary</a> » <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class XII</a> » <a href="http://49.50.72.128/testmoocs3/learn/chapter.php?subid=3&amp;classname=Class%20XII&amp;classid=L">Chemistry</a> » <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=35&amp;subid=3&amp;classid=L">Surface  Chemistry</a></h3><h3><span>5.6	Colloids  Around Us</span></h3> 	
-					 		
-						<div class="tabnav">
-							<ul>
-								<li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=videos&amp;classid=L"><img src="./Ch5_files/icon_video.png"> Videos</a></li>
-								<li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=text&amp;classid=L"><img src="./Ch5_files/icon_text.png"> Text</a></li>
-								<li class="active"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L"><img src="./Ch5_files/icon_assessment.png"> Exercise</a></li>
-							</ul>
-						</div>          			
-						<div class="tab-content">
-											 <div class="tab-pane active" id="tab_1" style="display:none;">
-											 											 <h1 class="videocat" id="videos_udaan">CBSE Udaan Videos</h1>
-											 <div class="videocatwrap" id="videos_udaanwrap" style="display:block;">
-																								 <div style="clear:both;"></div>
-											 </div>
-											 <h1 class="videocat closed" id="videos_udaan">Other Videos (Open Source)</h1>
-											 <div class="videocatwrap" id="videos_udaanwrap" style="display:block;">
-												<div class="videowrap col-sm-6 col-xs-12">															<div class="image_tn">
-																																<!--<a href="javascript:openvideo('5ckvg2aeNbc');"  class="html5lightbox" data-group="set1" title="Video Name : Video <br>">-->
-																<img class="videothumb" src="./Ch5_files/0.jpg" width="200" height="150" alt="" style="cursor: pointer;">		
-																
-																<iframe width="340" height="300" src="./Ch5_files/5ckvg2aeNbc.html" frameborder="0" allowfullscreen=""></iframe>																<br><span style="color:#23a3c3;"><i class="fa fa-play-circle"></i>
-																Video Name : Video <br>Courtesy: <strong>EXAMFEAR</strong>																</span>
-																<!--</a> -->
-															</div>		
-													</div>												 <div style="clear:both;"></div>
-											 </div>
-											 										  </div>
-										  <!-- /.tab-pane -->
-										  <div class="tab-pane" id="tab_2" style="display:none;">   
-																						 <h1 class="textcat" id="text_udaan">NCERT Books</h1>
-											 <div class="textcatwrap" id="text_udaanwrap" style="display:block;">
-																											<div class="image_tn">
-																<iframe frameborder="0" width="100%" height="600" src="./Ch5_files/5.6.html" allowfullscreen=""></iframe>															</div>		
-																									 <div style="clear:both;"></div>
-											 </div>
-											 <h1 class="textcat closed" id="text_books">Others Books</h1>
-											 <div class="textcatwrap" id="text_bookswrap">
-																								 <div style="clear:both;"></div>
-											 </div>
-											 										  </div>
-										  <!-- /.tab-pane -->
-										  <div class="tab-pane" id="tab_3">   
-										   Coming soon...<br><img src="./Ch5_files/ud.png" title="Content Under Development">     
-										  </div>
-										  <!-- /.tab-pane -->
-										</div>
-					 					</div>
-					</div>
-    </section>
-	
-            
-  </main>
-  <footer id="footer">
-<hr style="margin-top:0px;">
-<div class="container well9">
-<div class="row">
-<div class="col-md-3 col-sm-3 col-xs-12">
-  <p class="copy">CBSE © <span id="copyright-year">2017</span></p>
-</div>
-<div class="col-md-9 col-sm-9 col-xs-12 cl pt">
-  <p class="text1"><strong>Disclaimer</strong>: The Video contents offered by CBSE in its Digi-शिक्षा portal are freely shared contents of various agencies that are in the field of free online education. These video contents are meant to act as learning aid and may not necessarily be exactly mapped with the NCERT books. The focus is on personalized learning anytime, anywhere, free of cost. This platform gives link to various educational resources so as to provide easy navigation for the students saving their precious time. The CBSE does not claim the ownership of the content and copyright. Copyright shall be applicable as specified in the respective content uploaded here with the consent of the agencies concerned.</p>
-</div>
-</div>
-</div>
-<hr>
-<div class="container">
-  
-  <!-- {%FOOTER_LINK} -->
-</div>
-</footer>
-</div>
-<script src="./Ch5_files/script-learn.js"></script><script src="./Ch5_files/jquery.cookie.js"></script><script src="./Ch5_files/jquery.easing.1.3.js"></script><script src="./Ch5_files/tmstickup.js"></script><script src="./Ch5_files/jquery.ui.totop.js"></script><script src="./Ch5_files/superfish.js"></script><script src="./Ch5_files/jquery.rd-navbar.js"></script><script src="./Ch5_files/jquery.rd-parallax.js"></script><script src="./Ch5_files/wow.js"></script><script src="./Ch5_files/TMSearch.js"></script><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
-<script type="text/javascript">
-$(function() {
-	$('a[href*=#]:not([href=#])').click(function() {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-		if (target.length) {
-			$('html,body').animate({
-			  scrollTop: target.offset().top
-			}, 1000);
-			return false;
-		}
-	});
-	$('#sidebar li a').click(function(e) {
-		$('#sidebar li ul').hide();
-		$(this).next('ul').slideToggle(200);
-		$('#sidebar li').removeClass('active');
-		$(this).parent().addClass('active');
-		if($(this).parent().children('ul').length>0){
-			e.preventDefault();
-		}		
-	});			
-});
+              <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Secondary</a>
+                <ul>
+                  <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class IX</a></li>
+                  <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class X</a></li>
+                </ul>
+              </li>
+              <li class="active"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Senior Secondary</a>
+                <ul>
+                  <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class XI</a></li>
+                  <li><a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class XII</a></li>
+                </ul>
+              </li>
+              <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-md-10 col-sm-10" id="pagewrap">
 
-$(document).ready(function() {
-    $(".videocat").click(function () {
+
+            <h3 class="breadcrumb"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+                onclick="javascript:window.history.go(-1); return false;" class="historyback">← Back</a><a style="float:right;"
+                class="togglescreen" href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+                onclick="fullscreencontent();"></a><a href="http://49.50.72.128/testmoocs3/index.php#courses">Senior Secondary</a>              » <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class XII</a> » <a href="http://49.50.72.128/testmoocs3/learn/chapter.php?subid=3&amp;classname=Class%20XII&amp;classid=L">Chemistry</a>              » <a href="http://49.50.72.128/testmoocs3/learn/topic.php?chapid=35&amp;subid=3&amp;classid=L">Surface  Chemistry</a></h3>
+            <h3><span>5.6	Colloids  Around Us</span></h3>
+
+            <div class="tabnav">
+              <ul>
+                <li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=videos&amp;classid=L"><img src="./Ch5_files/icon_video.png"> Videos</a></li>
+                <li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=text&amp;classid=L"><img src="./Ch5_files/icon_text.png"> Text</a></li>
+                <li class=""><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L"><img src="./Ch5_files/icon_assessment.png"> Exercise</a></li>
+                <li class="active"><a href=""><img src="http://testrocket.in/assets/images/favicon.png"> Test</a></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab_1" style="display:none;">
+                <h1 class="videocat" id="videos_udaan">CBSE Udaan Videos</h1>
+                <div class="videocatwrap" id="videos_udaanwrap" style="display:block;">
+                  <div style="clear:both;"></div>
+                </div>
+                <h1 class="videocat closed" id="videos_udaan">Other Videos (Open Source)</h1>
+                <div class="videocatwrap" id="videos_udaanwrap" style="display:block;">
+                  <div class="videowrap col-sm-6 col-xs-12">
+                    <div class="image_tn">
+                      <!--<a href="javascript:openvideo('5ckvg2aeNbc');"  class="html5lightbox" data-group="set1" title="Video Name : Video <br>">-->
+                      <img class="videothumb" src="./Ch5_files/0.jpg" width="200" height="150" alt="" style="cursor: pointer;">
+
+                      <iframe width="340" height="300" src="./Ch5_files/5ckvg2aeNbc.html" frameborder="0" allowfullscreen=""></iframe> <br><span style="color:#23a3c3;"><i class="fa fa-play-circle"></i>
+																Video Name : Video <br>Courtesy: <strong>EXAMFEAR</strong>																</span>
+                      <!--</a> -->
+                    </div>
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_2" style="display:none;">
+                <h1 class="textcat" id="text_udaan">NCERT Books</h1>
+                <div class="textcatwrap" id="text_udaanwrap" style="display:block;">
+                  <div class="image_tn">
+                    <iframe frameborder="0" width="100%" height="600" src="./Ch5_files/5.6.html" allowfullscreen=""></iframe>
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>
+                <h1 class="textcat closed" id="text_books">Others Books</h1>
+                <div class="textcatwrap" id="text_bookswrap">
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_3" style="display:none;">
+                Coming soon...<br><img src="./Ch5_files/ud.png" title="Content Under Development">
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_4">
+                <iframe src="http://test.fishworks.co?testID=177" frameborder="0" width="100%" height="700"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer id="footer">
+      <hr style="margin-top:0px;">
+      <div class="container well9">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <p class="copy">CBSE © <span id="copyright-year">2017</span></p>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12 cl pt">
+            <p class="text1"><strong>Disclaimer</strong>: The Video contents offered by CBSE in its Digi-शिक्षा portal are freely shared contents
+              of various agencies that are in the field of free online education. These video contents are meant to act as
+              learning aid and may not necessarily be exactly mapped with the NCERT books. The focus is on personalized learning
+              anytime, anywhere, free of cost. This platform gives link to various educational resources so as to provide
+              easy navigation for the students saving their precious time. The CBSE does not claim the ownership of the content
+              and copyright. Copyright shall be applicable as specified in the respective content uploaded here with the
+              consent of the agencies concerned.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+
+        <!-- {%FOOTER_LINK} -->
+      </div>
+    </footer>
+  </div>
+  <script src="./Ch5_files/script-learn.js"></script>
+  <script src="./Ch5_files/jquery.cookie.js"></script>
+  <script src="./Ch5_files/jquery.easing.1.3.js"></script>
+  <script src="./Ch5_files/tmstickup.js"></script>
+  <script src="./Ch5_files/jquery.ui.totop.js"></script>
+  <script src="./Ch5_files/superfish.js"></script>
+  <script src="./Ch5_files/jquery.rd-navbar.js"></script>
+  <script src="./Ch5_files/jquery.rd-parallax.js"></script>
+  <script src="./Ch5_files/wow.js"></script>
+  <script src="./Ch5_files/TMSearch.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+  <script type="text/javascript">
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      });
+      $('#sidebar li a').click(function (e) {
+        $('#sidebar li ul').hide();
+        $(this).next('ul').slideToggle(200);
+        $('#sidebar li').removeClass('active');
+        $(this).parent().addClass('active');
+        if ($(this).parent().children('ul').length > 0) {
+          e.preventDefault();
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $(".videocat").click(function () {
         $(".videocat").addClass('closed');
-		$(this).removeClass('closed');
+        $(this).removeClass('closed');
         $(".videocatwrap").hide();
         $(this).next().show();
-    });
-    $(".textcat").click(function () {
+      });
+      $(".textcat").click(function () {
         $(".textcat").addClass('closed');
-		$(this).removeClass('closed');
+        $(this).removeClass('closed');
         $(".textcatwrap").hide();
         $(this).next().show();
+      });
     });
-});
-</script>
+  </script>
 
-<a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" id="toTop" class="toTop fa fa-chevron-up" style="display: none;"></a><div class="rd-mobilemenu"><ul class="rd-mobilemenu_ul"><li class="active"><a href="http://49.50.72.128/testmoocs3/index.php">Home</a></li><li><a href="http://49.50.72.128/testmoocs3/index.php#courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a><ul class="rd-mobilemenu_submenu" style="display: none;">
+  <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+    id="toTop" class="toTop fa fa-chevron-up" style="display: none;"></a>
+  <div class="rd-mobilemenu">
+    <ul class="rd-mobilemenu_ul">
+      <li class="active"><a href="http://49.50.72.128/testmoocs3/index.php">Home</a></li>
+      <li><a href="http://49.50.72.128/testmoocs3/index.php#courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class 12<sup>th</sup></a> </li>
-		</ul></li><li><a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a><ul class="rd-mobilemenu_submenu" style="display: none;">
+        </ul>
+      </li>
+      <li><a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
           <li> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
           <li> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
           <li> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
           <li> <a href="http://nroer.gov.in/welcome" target="_blank">NROER</a> </li>
           <li> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
-        </ul></li><li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" class="rd-with-ul">Partners<span class="rd-submenu-toggle"></span></a><ul class="rd-mobilemenu_submenu" style="display: none;">
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Khan Academy</a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Exam Fear</a> </li>
-        </ul></li><li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li></ul></div><div class="rd-mobilepanel"><button class="rd-mobilepanel_toggle"><span></span></button><h2 class="rd-mobilepanel_title">Home</h2></div><div id="window-resizer-tooltip"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
+        </ul>
+      </li>
+      <li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+          class="rd-with-ul">Partners<span class="rd-submenu-toggle"></span></a>
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Khan Academy</a>            </li>
+          <li> <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#">Exam Fear</a>            </li>
+        </ul>
+      </li>
+      <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
+    </ul>
+  </div>
+  <div class="rd-mobilepanel"><button class="rd-mobilepanel_toggle"><span></span></button>
+    <h2 class="rd-mobilepanel_title">Home</h2>
+  </div>
+  <div id="window-resizer-tooltip"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=35&amp;subid=3&amp;topicid=324&amp;classname=Class%20XII&amp;show=assessment&amp;classid=L#"
+      title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span>    x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth"
+      id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div>
+</body>
+
+</html>
