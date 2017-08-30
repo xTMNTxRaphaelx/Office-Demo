@@ -90,11 +90,9 @@
           event.preventDefault();
         }
       });
-
   </script>
   <script type="text/javascript">
     window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
-
   </script>
 
   <script type="text/javascript">
@@ -126,7 +124,6 @@
         return false;
       }
     }
-
   </script>
   <style type="text/css">
     .videocat {
@@ -272,8 +269,8 @@
 <body>
   <div id="lightbox">
     <p style="text-align:center;color:#fff;">Click outside of box to Close Video</p>
-    <iframe id="lightboxvideo" style="margin:10% 25%; border:1px solid #666;" width="560"
-      height="359" src="./Ch14_files/saved_resource.html" frameborder="0" allowfullscreen=""></iframe>
+    <iframe id="lightboxvideo" style="margin:10% 25%; border:1px solid #666;" width="560" height="359" src="./Ch14_files/saved_resource.html"
+      frameborder="0" allowfullscreen=""></iframe>
   </div>
   <div class="page">
     <header>
@@ -390,7 +387,8 @@
               <ul>
                 <li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=74&amp;subid=5&amp;topicid=698&amp;classname=Class%20XI&amp;show=videos&amp;classid=K"><img src="./Ch14_files/icon_video.png"> Videos</a></li>
                 <li><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=74&amp;subid=5&amp;topicid=698&amp;classname=Class%20XI&amp;show=text&amp;classid=K"><img src="./Ch14_files/icon_text.png"> Text</a></li>
-                <li class="active"><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=74&amp;subid=5&amp;topicid=698&amp;classname=Class%20XI&amp;show=assessment&amp;classid=K"><img src="./Ch14_files/icon_assessment.png"> Exercise</a></li>
+                <li class=""><a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=74&amp;subid=5&amp;topicid=698&amp;classname=Class%20XI&amp;show=assessment&amp;classid=K"><img src="./Ch14_files/icon_assessment.png"> Exercise</a></li>
+                <li class="active"><a href=""><img src="http://testrocket.in/assets/images/favicon.png"> Test</a></li>
               </ul>
             </div>
             <div class="tab-content">
@@ -469,10 +467,13 @@
                 </div>
               </div>
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="tab_3">
+              <div class="tab-pane" id="tab_3" style="display:none;">
                 <iframe width="100%" height="600" src="./Ch14_files/EXI_ch14.html" frameborder="0"></iframe><span style="color:#23a3c3;"><i class="fa fa-database"></i> Source : NCERT</span><br><br>
               </div>
               <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_4">
+                <iframe src="http://test.fishworks.co?testID=177" frameborder="0" width="100%" height="700"></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -553,7 +554,6 @@
         $(this).next().show();
       });
     });
-
   </script>
 
   <a href="http://49.50.72.128/testmoocs3/learn/content.php?chapid=74&amp;subid=5&amp;topicid=698&amp;classname=Class%20XI&amp;show=assessment&amp;classid=K#"
@@ -562,8 +562,7 @@
     <ul class="rd-mobilemenu_ul">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="##courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a>
-        <ul class="rd-mobilemenu_submenu"
-          style="display: none;">
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
           <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
@@ -571,8 +570,7 @@
         </ul>
       </li>
       <li><a href="##addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a>
-        <ul class="rd-mobilemenu_submenu"
-          style="display: none;">
+        <ul class="rd-mobilemenu_submenu" style="display: none;">
           <li> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
           <li> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
           <li> <a href="http://epathshala.nic.in/" target="_blank">ePathshala</a> </li>
