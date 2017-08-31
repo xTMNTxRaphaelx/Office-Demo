@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)http://49.50.72.128/testmoocs3/index.php#courses -->
 <html lang="en" class=" desktop landscape">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>CBSE Digi - शिक्षा</title>
+  <title>Home</title>
 
   <meta name="format-detection" content="telephone=no">
-  <link rel="icon" href="http://49.50.72.128/testmoocs3/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./index_files/grid.css">
-  <link rel="stylesheet" href="./index_files/mailform.css">
-  <link rel="stylesheet" href="./index_files/search.css">
-  <link rel="stylesheet" href="./index_files/style-new.css">
-  <script src="./index_files/jquery.js"></script>
-  <script src="./index_files/jquery-migrate-1.2.1.js"></script>
-  <link href="./index_files/css" rel="stylesheet">
-  <!--[if lt IE 9]> 
-  <html class="lt-ie9">
-  <div style=' clear: both; text-align:center; position: relative;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-    </a>
-  </div>
-  <script src="js/html5shiv.js"></script>https://www.youtube.com/v/bQ7i2BvShKg&start=20&end=80&rel=0
-  <![endif]-->
+  <link rel="stylesheet" href="./HomeXI_files/grid.css">
+  <link rel="stylesheet" href="./HomeXI_files/mailform.css">
+  <link rel="stylesheet" href="./HomeXI_files/search.css">
+  <link rel="stylesheet" href="./HomeXI_files/style-new.css">
+  <script src="./HomeXI_files/jquery.js"></script>
+  <link href="./HomeXI_files/css" rel="stylesheet">
 
-  <script src="./index_files/device.min.js"></script>
-  <style type="text/css">
-    .well9 p {
-      text-align: center;
-      line-height: 20px;
+  <script src="./HomeXI_files/device.min.js"></script>
+  <script type="text/javascript">
+    function fullscreencontent() {
+      $("#pagewrap").toggleClass('fullscreen');
+      $(".item").fadeIn();
     }
-  </style>
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      // Show sidebar
+      function showSidebar() {
+        $('#main').addClass('use-sidebar');
+        //$.cookie('sidebar-pref', 'use-sidebar', { expires: 30 });
+      }
+      $('#button-show').click(function () {
+        showSidebar();
+      });
+
+      // Hide sidebar
+      function hideSidebar() {
+        $('#main').removeClass('use-sidebar');
+        //$.cookie('sidebar-pref', null, { expires: 30 });
+      }
+      $('#button-hide').click(function () {
+        hideSidebar();
+      });
+
+      // Toggle sidebar
+      $('#button-toggle').click(function () {
+        if ($('#main').hasClass('use-sidebar')) {
+          hideSidebar();
+        }
+        else {
+          showSidebar();
+        }
+      });
+
+      // Reset preference
+      $('#button-reset').click(function () {
+        //$.cookie('sidebar-pref', null);
+      });
+
+      // Auto-load preference
+      //$('#main').addClass($.cookie('sidebar-pref'));
+    });
+  </script>
 </head>
 
 <body>
@@ -40,42 +67,42 @@
     <header>
       <div id="stuck_container" class="stuck_container">
         <div class="container">
-          <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./index_files/cbse-logo.png"></a>
+          <div class="col-xs-6 col-sm-6"> <a href="#" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./HomeXI_files/cbse-logo.png"></a>
             <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
             <h2>Central Board of Secondary Education</h2>
           </div>
           <div class="col-xs-4 col-sm-4">
-            <h1><img src="./index_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+            <h1><img src="./HomeXI_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
           </div>
-          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./index_files/digitalindia.png"></div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./HomeXI_files/digitalindia.png"></div>
         </div>
       </div>
-      <div id="stuck_container" class="stuck_container isStuck" style="top: -109px; visibility: hidden; position: fixed; width: 100%; margin-top: 0px;">
+      <div id="stuck_container" class="stuck_container isStuck" style="top: -109px; visibility: hidden; position: fixed; width: 100%;">
         <div class="container">
-          <div class="col-xs-6 col-sm-6"> <a href="http://49.50.72.128/testmoocs3/index.php" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./index_files/cbse-logo.png"></a>
+          <div class="col-xs-6 col-sm-6"> <a href="#" style="float:left; margin:2px 20px 0 0;"><img style="width:75px; float:left;" src="./HomeXI_files/cbse-logo.png"></a>
             <h2 style="margin-top:20px;">केन्द्रीय माध्यमिक शिक्षा बोर्ड</h2>
             <h2>Central Board of Secondary Education</h2>
           </div>
           <div class="col-xs-4 col-sm-4">
-            <h1><img src="./index_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
+            <h1><img src="./HomeXI_files/digisikshalogo-white.png" style="width:150px; margin-top:20px;"></h1>
           </div>
-          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./index_files/digitalindia.png"></div>
+          <div class="col-xs-2 col-sm-2"><img style="margin-top:5px;" src="./HomeXI_files/digitalindia.png"></div>
         </div>
       </div>
     </header>
     <nav class="nav">
       <div class="container" style="text-align:right;">
         <ul class="sf-menu sf-js-enabled sf-arrows" data-type="navbar">
-          <li class="active"> <a href="http://49.50.72.128/testmoocs3/index.php">Home</a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/index.php#courses" class="sf-with-ul">Contents</a>
+          <li class="active"> <a href="#">Home</a> </li>
+          <li> <a href="##courses" class="sf-with-ul">Contents</a>
             <ul style="display: none;">
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class 12<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="#">Class 9<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="#">Class 10<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXI.html">Class 11<sup>th</sup></a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXII.html">Class 12<sup>th</sup></a> </li>
             </ul>
           </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="sf-with-ul">Other Links</a>
+          <li> <a href="##addresource" class="sf-with-ul">Other Links</a>
             <ul style="display: none;">
               <li style="opacity: 0;"> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
               <li style="opacity: 0;"> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
@@ -84,10 +111,10 @@
               <li style="opacity: 0;"> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
             </ul>
           </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/index.php#partners" class="sf-with-ul">Partners</a>
+          <li> <a href="/HomeXI.html#" class="sf-with-ul">Partners</a>
             <ul style="display: none;">
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/index.php#">Khan Academy</a> </li>
-              <li style="opacity: 0;"> <a href="http://49.50.72.128/testmoocs3/index.php#">Exam Fear</a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXI.html#">Khan Academy</a> </li>
+              <li style="opacity: 0;"> <a href="/HomeXI.html#">Exam Fear</a> </li>
             </ul>
           </li>
           <li> <a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a> </li>
@@ -95,73 +122,84 @@
       </div>
     </nav>
     <main>
-      <section class="parallax" data-url="images/newbanner.jpg" style="padding-top:20px; padding-bottom:20px;">
-        <div class="parallax_image" style="background-image: url(&quot;images/newbanner.jpg&quot;); background-color: inherit; height: 605px; transform: translate3d(0px, -48.1477px, 0px);"></div>
-        <div class="parallax_cnt">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12 col-sm-12">
-                <p class="animated fadeInLeft bannertext">Digi - शिक्षा is a learning platform providing access to students to a wide range of e-resources supporting
-                  secondary and senior secondary Board curricula. These resources have been reviewed, mapped and made accessible
-                  for a more diverse learning experience. Some of the content has been developed in-house, while other has
-                  been curated from open source. Students may use the AV resources and assessment exercises as referral material
-                  that would supplement classroom learning.</p>
-              </div>
-              <div class="col-xs-12 col-sm-6" style="margin-top:-50px;">
-                <div id="b_icon1" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon1.png"></div>
-                <div id="b_icon2" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon2.png"></div>
-                <div id="b_icon3" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon3.png"></div>
-                <div id="b_icon4" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon4.png"></div>
-                <div id="b_icon5" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon5.png"></div>
-                <div id="b_icon6" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon6.png"></div>
-                <div id="b_icon7" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon7.png"></div>
-                <div id="b_icon8" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon8.png"></div>
-                <div id="b_icon9" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon9.png"></div>
-                <div id="b_icon10" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon10.png"></div>
-                <div id="b_icon11" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon11.png"></div>
-                <div id="b_icon12" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon12.png"></div>
-                <div id="b_icon13" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon13.png"></div>
-                <div id="b_icon14" class="animated zoomIn b_icon"><img class="" src="./index_files/banner-icon14.png"></div>
-              </div>
-              <div class="col-xs-12 col-sm-5">
-              </div>
-              <div class="col-xs-12 col-sm-7">
-                <div id="digilogo" class="animated fadeInUp">
-                  <h4 style="color:#fff; margin-top:60px;"><strong>Disclaimer</strong></h4>
-                  <p class="animated fadeInRight" style="line-height:20px; font-size:15px;text-align:justify">The Video contents offered by CBSE in its Digi-शिक्षा portal are freely shared contents of various agencies
-                    that are in the field of free online education. These video contents are meant to act as learning aid
-                    and may not necessarily be exactly mapped with the NCERT books. The focus is on personalized learning
-                    anytime, anywhere, free of cost. This platform gives link to various educational resources so as to provide
-                    easy navigation for the students saving their precious time. The CBSE does not claim the ownership of
-                    the content and copyright. Copyright shall be applicable as specified in the respective content uploaded
-                    here with the consent of the agencies concerned.</p>
-                </div>
-              </div>
+      <section class="well9 bg-primary">
+        <div class="row">
+          <div class="col-md-2 col-sm-10" id="sidebar">
+            <div id="search">
+              <form>
+                <input name="q" type="text">
+                <input type="submit" value="Search" name="Submit">
+              </form>
             </div>
+            <ul>
+              <!--<li > <a href="index.php?classid=A">Primary</a>
+    <ul>
+      <li><a href="index.php?classid=A">Class I</a></li>
+      <li><a href="index.php?classid=B">Class II</a></li>
+      <li><a href="index.php?classid=C">Class III</a></li>
+      <li><a href="index.php?classid=D">Class IV</a></li>
+      <li><a href="index.php?classid=E">Class V</a></li>
+    </ul>
+  </li>
+  <li > <a href="index.php?classid=F">Middle</a>
+    <ul>
+      <li><a href="index.php?classid=F">Class VI</a></li>
+      <li><a href="index.php?classid=G">Class VII</a></li>
+      <li><a href="index.php?classid=H">Class VIII</a></li>
+    </ul>
+  </li> -->
+              <li> <a href="">Secondary</a>
+                <ul>
+                  <li><a href="#">Class IX</a></li>
+                  <li><a href="#">Class X</a></li>
+                </ul>
+              </li>
+              <li class="active"> <a href="#">Senior Secondary</a>
+                <ul>
+                  <li><a href="HomeXI.html">Class XI</a></li>
+                  <li><a href="HomeXII.html">Class XII</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section class="well10 bg-secondary parallax" id="courses" data-url="images/bg-new.jpg">
-        <div class="parallax_image" style="background-image: url(&quot;images/bg-new.jpg&quot;); background-color: inherit; height: 605px; transform: translate3d(0px, -26.1742px, 0px);"></div>
-        <div class="parallax_cnt">
-          <div class="container">
-            <h3>Contents</h3>
-            <div class="row" style="margin-top:5px;border-top:1px solid #9cf2c3;padding-top:5px;">
+          <div class="col-md-10 col-sm-10" id="pagewrap">
+            <h3 class="breadcrumb"><a style="float:right;" class="togglescreen" href="#" onclick="fullscreencontent();"></a><a href="#">Senior Secondary</a>              » Class XI</h3>
+            <div class="row">
               <div class="unitslist">
                 <div class="cbp-item col-md-3 col-sm-4 margin30">
-                  <a href="HomeXI.html" class="item bgclass3 animated zoomIn">
-												<img src="./index_files/class-11.png">
+                  <a href="XI/Physics.html" class="item bgclass1 animated zoomIn">
+												<img src="./HomeXI_files/icon_physics.png">
 												<div class="caption-body">
-													<div class="caption-title">Class XI</div>
+													<div class="caption-title">Physics</div>
+													<div class="caption-desc">15 Chapters</div>
 												</div>
 											</a>
                 </div>
                 <div class="cbp-item col-md-3 col-sm-4 margin30">
-                  <a href="HomeXII.html" class="item bgclass4 animated zoomIn">
-												<img src="./index_files/class-12.png">
+                  <a href="XI/Chemistry.html" class="item bgclass2 animated zoomIn">
+												<img src="./HomeXI_files/icon_chemistry.png">
 												<div class="caption-body">
-													<div class="caption-title">Class XII</div>
+													<div class="caption-title">Chemistry</div>
+													<div class="caption-desc">14 Chapters</div>
+												</div>
+											</a>
+                </div>
+                <div class="cbp-item col-md-3 col-sm-4 margin30">
+                  <a href="XI/Mathematics.html" class="item bgclass3 animated zoomIn">
+												<img src="./HomeXI_files/icon_mathematics.png">
+												<div class="caption-body">
+													<div class="caption-title">Mathematics</div>
+													<div class="caption-desc">16 Chapters</div>
+												</div>
+											</a>
+                </div>
+                <div class="cbp-item col-md-3 col-sm-4 margin30">
+                  <a href="XI/Biology.html" class="item bgclass4 animated zoomIn">
+												<img src="./HomeXI_files/icon_biology.png">
+												<div class="caption-body">
+													<div class="caption-title">Biology</div>
+													<div class="caption-desc">22 Chapters</div>
 												</div>
 											</a>
                 </div>
@@ -170,131 +208,82 @@
           </div>
         </div>
       </section>
-      <section class="well9" id="addresource" style="border-top:1px solid #aaa;">
-        <div class="container">
-          <h3><span>Other </span> Links</h3>
-          <ul class="row" style="margin-top:10px;">
-            <li class="col-xs-12 col-sm-4 wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <h4><a href="http://cbse.nic.in/ecbse/index.html" target="_blank" class="icon fa"><img src="./index_files/cbse.png" alt="CBSE"></a></h4>
-              <p>CBSE e- book is an initiative to bring books close to students, so that students can read them on the go.</p>
-            </li>
-            <li class="col-xs-12 col-sm-4 wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <h4><a href="https://swayam.gov.in/" target="_blank" class="icon fa"><img src="./index_files/swayam.png" alt="SWAYAM"></a></h4>
-              <p>SWAYAM is a programme initiated by Government of India and designed to achieve the three cardinal principles
-                of Education Policy viz., access, equity and quality.</p>
-            </li>
-            <li class="col-xs-12 col-sm-4 wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <h4><a href="http://epathshala.nic.in/" target="_blank" class="icon fa"><img src="./index_files/ncert.png" alt="NCERT"></a></h4>
-              <p>The ePathshala, a joint initiative by MHRD, Govt. of India and the NCERT, has been developed for showcasing
-                and disseminating all educational e-resources</p>
-            </li>
-          </ul>
-          <ul class="row" style="margin-top:10px;">
-            <li class="col-xs-12 col-sm-2 wow fadeInUp animated" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <h4></h4>
-              <p></p>
-            </li>
-            <li class="col-xs-12 col-sm-4 wow fadeInUp animated" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <h4><a href="http://nroer.gov.in/welcome" target="_blank" class="icon fa"><img src="./index_files/nreor_new.png" alt="NROER"></a></h4>
-              <p>NROER is a collaborative platform, which brings together everyone interested in school and teacher education.</p>
-            </li>
-            <li class="col-xs-12 col-sm-4 wow fadeInUp animated" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <h4><a href="http://nptel.ac.in/" target="_blank" class="icon fa"><img src="./index_files/ntpel.png" alt="NPTEL"></a></h4>
-              <p>NPTEL provides E-learning through online Web and Video courses in Engineering, Science and humanities streams.</p>
-            </li>
-            <li class="col-xs-12 col-sm-2 wow fadeInUp animated" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <h4></h4>
-              <p></p>
-            </li>
-          </ul>
-        </div>
-      </section>
+
+
     </main>
     <footer id="footer">
       <hr style="margin-top:0px;">
-      <div class="container">
-        <p class="copy">CBSE © <span id="copyright-year">2017</span></p>
-        <!-- {%FOOTER_LINK} -->
+      <div class="container well9">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <p class="copy">CBSE © <span id="copyright-year">2017</span></p>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12 cl pt">
+            <p class="text1"><strong>Disclaimer</strong>: The Video contents offered by CBSE in its Digi-शिक्षा portal are freely shared contents
+              of various agencies that are in the field of free online education. These video contents are meant to act as
+              learning aid and may not necessarily be exactly mapped with the NCERT books. The focus is on personalized learning
+              anytime, anywhere, free of cost. This platform gives link to various educational resources so as to provide
+              easy navigation for the students saving their precious time. The CBSE does not claim the ownership of the content
+              and copyright. Copyright shall be applicable as specified in the respective content uploaded here with the
+              consent of the agencies concerned.</p>
+          </div>
+        </div>
       </div>
-      <div class="dimmer"></div>
-      <div class="feedbackform"><span class="closefeedback">X</span>
-        <form action="http://49.50.72.128/testmoocs3/db.php" method="post">
-          <fieldset>
-            <h3>Feedback</h3>
-            <div class="field"><input type="text" name="name" class="formcontrol" placeholder="Name"></div>
-            <div class="field"><input type="email" name="email" class="formcontrol" placeholder="Email"></div>
-            <div class="field"><input type="text" name="mobile" class="formcontrol" placeholder="Mobile"></div>
-            <div class="field"><select class="formcontrol" name="ftype"><option>You are?</option><option>Student</option><option>Parent</option><option>Teacher</option></select></div>
-            <div class="field"><textarea class="formcontrol" placeholder="Message" name="feedback"></textarea></div>
-            <div class="field"><input type="submit" name="sub" class="btn2"></div>
-          </fieldset>
-        </form>
-        <script type="text/javascript">
-          $('.askfeedback').click(function (e) {
-            e.preventDefault();
-            $('.feedbackform, .dimmer').show();
-          });
-          $('.closefeedback').click(function () {
-            $('.feedbackform, .dimmer').hide();
-          });
-          $('#partnerscontrol').click(function () {
-            $('#partnerslist').toggle();
-            $("#partnersslip").toggleClass("listhidden");
-            setInterval("closepartners()", 10000);
-          });
-          function closepartners() {
-            $('#partnerslist').hide();
-            $("#partnersslip").addClass("listhidden");
-          }
-        </script>
+      <hr>
+      <div class="container">
+
+        <!-- {%FOOTER_LINK} -->
       </div>
     </footer>
   </div>
-  <div id="fb-root" style="display:none;">
-    <audio autoplay="autoplay">
-      <source src="files/digishiksha-sound.mp3" type="audio/mpeg"> Browser does not support audio element.
-    </audio>
-  </div>
-  <script src="./index_files/script.js"></script>
-  <script src="./index_files/jquery.cookie.js"></script>
-  <script src="./index_files/jquery.easing.1.3.js"></script>
-  <script src="./index_files/tmstickup.js"></script>
-  <script src="./index_files/jquery.ui.totop.js"></script>
-  <script src="./index_files/superfish.js"></script>
-  <script src="./index_files/jquery.rd-navbar.js"></script>
-  <script src="./index_files/jquery.rd-parallax.js"></script>
-  <script src="./index_files/wow.js"></script>
-  <script src="./index_files/TMSearch.js"></script>
+  <script src="./HomeXI_files/script-learn.js"></script>
+  <script src="./HomeXI_files/jquery.cookie.js"></script>
+  <script src="./HomeXI_files/jquery.easing.1.3.js"></script>
+  <script src="./HomeXI_files/tmstickup.js"></script>
+  <script src="./HomeXI_files/jquery.ui.totop.js"></script>
+  <script src="./HomeXI_files/superfish.js"></script>
+  <script src="./HomeXI_files/jquery.rd-navbar.js"></script>
+  <script src="./HomeXI_files/jquery.rd-parallax.js"></script>
+  <script src="./HomeXI_files/wow.js"></script>
+  <script src="./HomeXI_files/TMSearch.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
-  <script>
-          $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            });
-          });
+  <script type="text/javascript">
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      });
+      $('#sidebar li a').click(function (e) {
+        $('#sidebar li ul').hide();
+        $(this).next('ul').slideToggle(200);
+        $('#sidebar li').removeClass('active');
+        $(this).parent().addClass('active');
+        if ($(this).parent().children('ul').length > 0) {
+          e.preventDefault();
+        }
+      });
+    });
   </script>
 
-
-  <a href="http://49.50.72.128/testmoocs3/index.php#" id="toTop" class="toTop fa fa-chevron-up" style="display: none;"></a>
+  <a href="/HomeXI.html#" id="toTop" class="toTop fa fa-chevron-up" style="display: none;"></a>
   <div class="rd-mobilemenu">
     <ul class="rd-mobilemenu_ul">
-      <li class="active"><a href="http://49.50.72.128/testmoocs3/index.php">Home</a></li>
-      <li><a href="http://49.50.72.128/testmoocs3/index.php#courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="##courses" class="rd-with-ul">Contents<span class="rd-submenu-toggle"></span></a>
         <ul class="rd-mobilemenu_submenu" style="display: none;">
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=I">Class 9<sup>th</sup></a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=J">Class 10<sup>th</sup></a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=K">Class 11<sup>th</sup></a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/learn/index.php?classid=L">Class 12<sup>th</sup></a> </li>
+          <li> <a href="#">Class 9<sup>th</sup></a> </li>
+          <li> <a href="#">Class 10<sup>th</sup></a> </li>
+          <li> <a href="/HomeXI.html">Class 11<sup>th</sup></a> </li>
+          <li> <a href="/HomeXII.html">Class 12<sup>th</sup></a> </li>
         </ul>
       </li>
-      <li><a href="http://49.50.72.128/testmoocs3/index.php#addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a>
+      <li><a href="##addresource" class="rd-with-ul">Other Links<span class="rd-submenu-toggle"></span></a>
         <ul class="rd-mobilemenu_submenu" style="display: none;">
           <li> <a href="http://cbse.nic.in/ecbse/index.html" target="_blank">E-CBSE</a> </li>
           <li> <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a> </li>
@@ -303,22 +292,22 @@
           <li> <a href="http://nptel.ac.in/" target="_blank">NPTEL</a> </li>
         </ul>
       </li>
-      <li><a href="http://49.50.72.128/testmoocs3/index.php#partners" class="rd-with-ul">Partners<span class="rd-submenu-toggle"></span></a>
+      <li><a href="/HomeXI.html#" class="rd-with-ul">Partners<span class="rd-submenu-toggle"></span></a>
         <ul class="rd-mobilemenu_submenu" style="display: none;">
-          <li> <a href="http://49.50.72.128/testmoocs3/index.php#">Khan Academy</a> </li>
-          <li> <a href="http://49.50.72.128/testmoocs3/index.php#">Exam Fear</a> </li>
+          <li> <a href="/HomeXI.html#">Khan Academy</a> </li>
+          <li> <a href="/HomeXI.html#">Exam Fear</a> </li>
         </ul>
       </li>
       <li><a href="http://49.50.72.128/testmoocs3/mobileotp.php">Feedback</a></li>
     </ul>
   </div>
   <div class="rd-mobilepanel"><button class="rd-mobilepanel_toggle"><span></span></button>
-    <h2 class="rd-mobilepanel_title">CBSE Digi - शिक्षा</h2>
+    <h2 class="rd-mobilepanel_title">Home</h2>
   </div>
-  <div id="window-resizer-tooltip" style="display: block;"><a href="http://49.50.72.128/testmoocs3/index.php#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span>
+  <div id="window-resizer-tooltip" style="display: block;"><a href="/HomeXI.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span>
     <span class="tooltipWidth" id="winWidth">1317</span> x <span class="tooltipHeight" id="winHeight">744</span><br>
     <span class="tooltipTitle">Viewport size: </span>
-    <span class="tooltipWidth" id="vpWidth">1317</span> x <span class="tooltipHeight" id="vpHeight">605</span></div>
+    <span class="tooltipWidth" id="vpWidth">1317</span> x <span class="tooltipHeight" id="vpHeight">629</span></div>
 </body>
 
 </html>
